@@ -1,6 +1,6 @@
 # spring-cloud-microservice-study
 
-<h3>Module 1 :</h3> 
+<h3>Module 1 : microservice-discovery-eureka</h3> 
 
 url:<br />
 http://discovery:8760/<br />
