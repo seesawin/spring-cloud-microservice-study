@@ -1,6 +1,6 @@
 ---
 server:
-  port: 8760                    # 指定该Eureka实例的端口
+  port: 8761                    # 指定该Eureka实例的端口
 
 eureka:
   instance:
