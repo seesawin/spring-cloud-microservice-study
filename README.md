@@ -2,11 +2,12 @@
 
 <h3>Module 1 : microservice-discovery-eureka</h3> 
 
-url:<br />
+url: <br />
 http://discovery:8760/<br />
 http://peer1:8761/<br />
 http://peer2:8762/<br />
-shutdowncurl -X POST host:port/shutdown<br />
+how to shutdown : curl -X POST host:port/shutdown<br /> 
+
 
 cmd:<br />
 java -jar microservice-discovery-eureka-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer1<br />
