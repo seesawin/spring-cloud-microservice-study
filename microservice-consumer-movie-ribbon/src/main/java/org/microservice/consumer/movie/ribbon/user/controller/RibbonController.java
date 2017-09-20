@@ -13,7 +13,7 @@ public class RibbonController {
   private RibbonService ribbonService;
 
   @GetMapping("/ribbon/{id}")
-  public String findById(@PathVariable Long id) {
+  public String findById(@PathVariable String id) {
     return this.ribbonService.findById(id);
   }
 }

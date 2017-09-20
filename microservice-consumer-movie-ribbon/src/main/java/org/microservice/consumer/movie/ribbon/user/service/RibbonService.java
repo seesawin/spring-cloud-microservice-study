@@ -10,9 +10,9 @@ public class RibbonService {
   @Autowired
   private RestTemplate restTemplate;
 
-  public String findById(Long id) {
+  public String findById(String id) {
     // http://服务提供者的serviceId/url
-	  System.out.println("RibbonService findById... id is " + id);
+	System.out.println("RibbonService findById... id is " + id);
     return this.restTemplate.getForObject("http://microservice-provider-user/" + id, String.class);
   }
 }
