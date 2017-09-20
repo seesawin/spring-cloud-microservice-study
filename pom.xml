@@ -13,9 +13,12 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<!-- 註冊中心-->
 		<module>microservice-discovery-eureka</module>
 
+		<!-- 服務使用者 -->
 		<module>microservice-provider-user</module>
+		
 		<module>microservice-consumer-movie-ribbon</module>
 		<module>microservice-consumer-movie-feign</module>
 		<module>microservice-consumer-movie-ribbon-with-hystrix</module>
@@ -28,6 +31,9 @@
 		<module>microservice-config-server-eureka</module>
 		<module>microservice-config-client-eureka</module>
 		<module>microservice-api-gateway</module>
+		<module>microservice-provider-user-2</module>
+		<module>microservice-discovery-eureka-peer1</module>
+		<module>microservice-discovery-eureka-peer2</module>
 	</modules>
 
 	<!-- 使用最新的spring-boot版本 -->

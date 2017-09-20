@@ -3,6 +3,7 @@ package org.microservice.provider.user.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
   @Autowired
   private DiscoveryClient discoveryClient;
+  
+  @Autowired
+  Environment environment;
 
   /**
    * 注：@GetMapping("/{id}")是spring 4.3的新注解等价于：
@@ -26,8 +30,10 @@ public class UserController {
    * @return user信息
    */
   @GetMapping("/{id}")
-  public String findById(@PathVariable Long id) {
-    return "seesawin test id : " + id;
+  public String findById(@PathVariable String id) {
+    String port = environment.getProperty("local.server.port");
+    System.out.println("user port : " + port + " seesawin test id : " + id);
+    return "port : " + port + " seesawin test id : " + id;
   }
 
   /**
