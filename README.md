@@ -50,6 +50,10 @@ url: <br />
 delete old data : curl  -X POST http://localhost:8041/refresh<br />
 http://localhost:8041/hello<br /><br />
 
+<h3>Module 10 : microservice-api-gateway</h3> 
+url: <br />
+http://localhost:8050/microservice-provider-user/1<br /><br />
+
 all references :
 1. https://www.gitbook.com/book/eacdy/spring-cloud-book/details
 2. http://www.jianshu.com/p/44ef43b282f0
