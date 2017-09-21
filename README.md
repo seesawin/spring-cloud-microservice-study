@@ -15,7 +15,7 @@ java -jar microservice-discovery-eureka-0.0.1-SNAPSHOT.jar --spring.profiles.act
 <h3>Module 2 : microservice-provider-user</h3> 
 url: <br />
 http://discovery:8000/12222/<br />
-http://localhost:8000/instance-info/<br />
+http://localhost:8000/instance-info/<br /><br />
 
 <h3>Module 3 : microservice-consumer-movie-ribbon</h3> 
 url: <br />
@@ -28,7 +28,7 @@ http://localhost:8010/ribbon/1<br /><br />
 <h3>Module 5 : microservice-consumer-movie-ribbon-with-hystrix</h3> 
 url: <br />
 http://localhost:8011/ribbon/1<br /><br />
-http://localhost:8011/hystrix.stream<br />
+http://localhost:8011/hystrix.stream<br /><br />
 
 <h3>Module 6 : microservice-hystrix-dashboard</h3> 
 url: <br />
@@ -39,6 +39,16 @@ search url : http://localhost:8011/hystrix.stream<br /><br />
 url: <br />
 http://localhost:8030/hystrix.stream<br />
 search url : http://localhost:8031/turbine.stream<br /><br /><br />
+
+<h3>Module 8 : microservice-config-server</h3> 
+url: <br />
+http://localhost:8040/microservice-config-client-dev.properties<br />
+http://localhost:8040/microservice-config-client/dev<br /><br />
+
+<h3>Module 9 : microservice-config-client</h3> 
+url: <br />
+delete old data : curl  -X POST http://localhost:8041/refresh<br />
+http://localhost:8041/hello<br /><br />
 
 all references :
 1. https://www.gitbook.com/book/eacdy/spring-cloud-book/details
