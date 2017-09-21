@@ -32,7 +32,13 @@ http://localhost:8011/hystrix.stream<br />
 
 <h3>Module 6 : microservice-hystrix-dashboard</h3> 
 url: <br />
-http://localhost:8030/hystrix.stream<br /><br />
+http://localhost:8030/hystrix.stream<br />
+search url : http://localhost:8011/hystrix.stream<br /><br />
+
+<h3>Module 7 : microservice-hystrix-turbine</h3> 
+url: <br />
+http://localhost:8030/hystrix.stream<br />
+search url : http://localhost:8031/turbine.stream<br /><br /><br />
 
 all references :
 1. https://www.gitbook.com/book/eacdy/spring-cloud-book/details
